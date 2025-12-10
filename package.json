@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/theme-classic": "^3.9.2"
+  }
+}
