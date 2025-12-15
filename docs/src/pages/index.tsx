@@ -1,42 +1,27 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const siteConfig = useDocusaurusContext().siteConfig;
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-      </Heading>
-      <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg" to="/docs/intro">
-            Start Reading Book ...
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      title="Physical AI & Humanoid Robotics"
+      description="A textbook for learning Physical AI, Robotics, and Vision-Language-Action systems"
+    >
+      <main style={{ padding: '4rem 2rem', textAlign: 'center' }}>
+        <h1>Physical AI & Humanoid Robotics</h1>
+        <p style={{ maxWidth: '800px', margin: '1.5rem auto', fontSize: '1.1rem' }}>
+          This textbook introduces the foundations of Physical AI and Humanoid Robotics,
+          covering perception, planning, vision-language-action models, and autonomous humanoid systems.
+          It is designed for students and developers preparing for the future of intelligent robotics.
+        </p>
+
+        <Link
+          className="button button--primary button--lg"
+          to="/docs/intro"
+        >
+          📘 Start Reading the Book
+        </Link>
       </main>
     </Layout>
   );

@@ -1,6 +1,16 @@
 {
+  "name": "physical-ai-and-humanoid-robotics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "deploy": "docusaurus deploy"
+  },
   "dependencies": {
-    "@docusaurus/preset-classic": "^3.9.2",
-    "@docusaurus/theme-classic": "^3.9.2"
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
